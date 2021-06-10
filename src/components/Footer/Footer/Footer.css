@@ -2,6 +2,7 @@
     text-align: center;
     padding: 3.5rem 0;
     background-color: var(--neutralVeryDarkViolet);
+    position: relative;
 }
 
 .footer__main li {
@@ -35,7 +36,7 @@
     display: flex;
     justify-content: space-between;
     width: 10.5rem;
-    margin: 0 auto;
+    margin: 1.25em auto 0 auto;
 }
 
 .socials-list a {
@@ -45,6 +46,16 @@
 .socials-list a:active path {
     fill: var(--primaryCyan);
 }
+
+.attribution {
+    font-size: 11px; text-align: center;
+    position: absolute;
+    width: 100%;
+    right: 50%;
+    transform: translate(50%, 100%);
+}
+.attribution a { color: white; }
+.attribution a:hover { color: var(--primaryCyan); }
 
 @media (min-width: 40.25em) {
     .footer__navlist {
@@ -94,7 +105,10 @@
         justify-content: space-between;
     }
     .socials-list {
+        margin-top: 0;
         padding-top: 0;
     }
-    
+    .attribution {
+        bottom: 10%;
+    }
 }

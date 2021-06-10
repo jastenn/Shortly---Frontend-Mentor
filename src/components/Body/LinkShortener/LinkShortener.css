@@ -125,7 +125,7 @@
         cursor: pointer;
     }
     .shortener__btn.loading {
-        font-size: .9rem; 
+        font-size: clamp(.9rem, 2vw, 1.25rem ); 
         max-width: 12rem; 
         margin-left: .75rem;
     }

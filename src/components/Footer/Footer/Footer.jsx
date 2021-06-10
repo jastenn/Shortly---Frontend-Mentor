@@ -86,6 +86,11 @@ const Footer = ({features, resources, company}) => {
                         </li>
                     </ul>
                 </ul>
+                <div class="attribution">{
+                    // eslint-disable-next-line
+                }Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+                    Coded by <a href="https://github.com/jastenn">Justine Aviso</a>.
+                </div>
             </div>
         </footer>
     )
