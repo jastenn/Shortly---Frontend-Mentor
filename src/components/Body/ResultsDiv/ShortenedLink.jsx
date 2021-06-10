@@ -10,7 +10,9 @@ const ShortenedLink = ({shortenOutput}) => {
 
 
     window.addEventListener('resize', () => {
-        setScreenSize(window.innerWidth)
+        if(window.innerWidth < 1774) {
+            setScreenSize(window.innerWidth)
+        }
     })
 
     const charWidth = () => {

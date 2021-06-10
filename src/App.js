@@ -74,7 +74,6 @@ function App() {
       </div>
       <FooterCta textContent="Boost your links today" btnPadding=".5em 2em" btnFontSize="1.25rem"/>
       <Footer />
-      
     </div>
   );
 }
