@@ -1,0 +1,53 @@
+/* For Img Not to Overflow ||| Overflow on body doesn't work */
+#root {
+    overflow-x: hidden;
+}
+.intro {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.intro__img-container {
+    max-width: 35.25rem;
+    margin-bottom: 1em;
+}
+.intro__img {
+    margin-top: -1rem;
+    width: 150%;
+    max-width: 40.25rem;
+    overflow-x: hidden;
+}
+
+.content__heading--900 {
+    font-size: clamp(2.25rem, 6vw, 5rem);
+    line-height: 1.2;
+    color: var(--neutralVeryDarkViolet);
+    margin-bottom: .3em;
+}
+
+.content__subheading { 
+    font-size: clamp(1.125rem, 3vw ,1.38rem);
+    max-width: 33.125rem;
+    margin-bottom: 1.5em;
+}
+
+@media (min-width: 40.25em) {
+    .intro {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        text-align: unset;
+        margin: 2rem 0;
+    }
+
+    .intro__img {
+        transform: translateX(2rem);
+    }
+    .content__heading--900 {
+        margin-bottom: 0;
+    }
+    .content__subheading {
+        margin-bottom: 1em;
+    }
+   
+}

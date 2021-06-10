@@ -1,0 +1,141 @@
+.shortener {
+    background:var(--primaryDarkViolet) url(../../../img/bg-shorten-mobile.svg) no-repeat;
+    background-position: top right;
+    background-size: 50%;
+    border-radius: .75rem;
+    padding: 2em 0;
+    position: relative;
+    z-index: 10;
+    margin-bottom: -3.5em;
+}
+.error__msg {
+    font-size: .75rem;
+    font-weight: 500;
+    color: var(--secondaryRed);
+    position: absolute;
+    top: 50%;
+    left: 7%;
+    transform: translateY(-10px);
+}
+.shortener__input.error {
+    border: solid 3px var(--secondaryRed);
+    margin: 0 auto 1.25rem auto;
+}
+.shortener__input {
+    font-size: 1rem;
+    width: 87.25%;
+    padding: .4em 1em;
+    border-radius: .5em;
+    margin: 0 auto;
+    caret-color: var(--primaryCyan);
+    
+    /* Resets */
+    font-family: inherit;
+    display: block;
+    box-sizing: border-box;
+    border: none;
+}
+
+.shortener__input:focus {
+    outline: none;
+}
+
+.shortener__btn {
+    display: block;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    background-color: var(--primaryCyan);
+    width: 87.25%;
+    padding: .4em 1em;
+    margin: .75em auto 0 auto;
+    border-radius: .5em;
+    transition: background-color 200ms ease-out;
+
+    /* Resets */
+    box-sizing: border-box;
+    font-family: inherit;
+    border: none;
+}
+.shortener__btn:active {
+    background-color: var(--ctaActive);
+}
+
+.shortener__btn.loading:after {
+    content: ' .';
+    animation: dots 1s steps(5, end) infinite;}
+  
+@keyframes dots {
+    0%, 20% {
+        color: rgba(0,0,0,0);
+        text-shadow:
+        .25em 0 0 rgba(0,0,0,0),
+        .5em 0 0 rgba(0,0,0,0);
+    }
+    40% {
+        color: white;
+        text-shadow:
+        .25em 0 0 rgba(0,0,0,0),
+        .5em 0 0 rgba(0,0,0,0);
+    }
+    60% {
+        text-shadow:
+        .25em 0 0 white,
+        .5em 0 0 rgba(0,0,0,0);
+    }
+    80%, 100% {
+        text-shadow:
+        .25em 0 0 white,
+        .5em 0 0 white;
+    }
+}
+  
+@media (min-width: 40.25em) {
+    .shortener{
+        background-image: url(../../../img/bg-shorten-desktop.svg);
+        background-size: cover;
+    }
+    .shortener__input-container {
+        display: flex;
+        justify-content: space-between;
+        width: 87.25%;
+        margin: 0 auto;
+    }
+    .shortener__input {
+        width: 70%;
+        margin: 0;
+        font-size: clamp(1rem, 2vw, 1.25rem);
+        padding: .75em 1.5em;
+    }
+    .error__msg {
+        font-size: .875rem;
+        top: 96%;
+        transform: translateY(-100%);
+    }
+    .shortener__input.error {
+        margin: 0;
+    }
+    .shortener__btn {
+        max-width: 11rem;
+        width: 29%;
+        /* min-width: 9rem; */
+        margin: 0;
+        font-size: clamp(1rem, 2vw, 1.25rem);
+        padding: .75em 1.5em;
+        cursor: pointer;
+    }
+    .shortener__btn.loading {
+        font-size: .9rem; 
+        max-width: 12rem; 
+        margin-left: .75rem;
+    }
+    .shortener__btn:hover {
+        background-color: var(--ctaActive);
+    }
+}
+
+@media (min-width: 51em) {
+    .shortener__input {
+        width: calc(98% - 11rem);
+    }
+}

@@ -1,0 +1,17 @@
+.main-cta { 
+    background-color: hsl(180, 66%, 49%);
+    transition: background-color 200ms ease-out; 
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    display: inline-block;
+    cursor: default;
+}
+.main-cta:active { background-color: var(--ctaActive); }
+
+@media (min-width: 40.25em) {
+    .main-cta:hover { background-color: var(--ctaActive); }
+    .main-cta {
+        cursor: pointer;
+    }
+}

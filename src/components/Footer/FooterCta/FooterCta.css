@@ -1,0 +1,20 @@
+.footer__cta {
+    background:var(--primaryDarkViolet) url('../../../img/bg-boost-mobile.svg') no-repeat top right;
+    background-size: cover;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.f-cta__heading {
+    font-size: 1.75rem;
+    color: white;
+    margin: 0 .75em .75em .75em;
+    line-height: 1.4;
+}
+
+@media (min-width: 40.25em) {
+    .footer__cta {
+        background:var(--primaryDarkViolet) url('../../../img/bg-boost-desktop.svg') no-repeat center;
+        background-size: cover;
+    }
+}
