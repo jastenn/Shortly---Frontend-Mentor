@@ -7,6 +7,7 @@
 
 .f-cta__heading {
     font-size: 1.75rem;
+    font-size: clamp(1.75rem, 5vw, 2.5rem);
     color: white;
     margin: 0 .75em .75em .75em;
     line-height: 1.4;
