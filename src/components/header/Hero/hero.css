@@ -29,7 +29,7 @@
     max-width: 33.125rem;
     margin-bottom: 1.5em;
 }
-@media (min-width: 30.625em) {
+@media (min-width: 34.5em) {
     .intro__img {
         transform: translateX(2.75rem);
     }

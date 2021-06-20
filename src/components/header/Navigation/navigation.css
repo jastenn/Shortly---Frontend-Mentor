@@ -9,6 +9,7 @@
 
 .nav__list-container {
     position: absolute;
+    z-index: 100;
     top: 5rem;
     left: 50%;
     transform: translateX(-50%);
